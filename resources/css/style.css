@@ -199,6 +199,15 @@ h2.section{
 
 .item_L .itemText{
   padding: 1rem;
+
+}
+
+.item_L p{
+  margin: 0rem;
+
+}
+.item_L p, .item_L h5{
+font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 .list .itemText h3,.item_L .itemText h3, .itemText h5{
