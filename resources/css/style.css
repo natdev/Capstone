@@ -20,6 +20,17 @@ body{
 .logo img {
     height: 3rem;
 }
+
+.logo .logoName{
+  color:#9b9b9b;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.colmar{
+  font-weight: bold;
+  color:#4a4a4a;
+}
+
 .menu ul{
   list-style: none;
   padding: 0rem;
@@ -70,17 +81,16 @@ body{
     font-weight: bold;
 }
 
-.bannDesc span{
+.bannDesc a{
   display: inline-block;
-  width: 70%;
+  width: 84%;
   padding: 0.5rem 0rem;
   text-align: center;
   background-color: #4a4a4a;
+  text-decoration: none;
+  color:#fff;
 }
 
-.bannDesc span a{
-  text-decoration: none;
-  color:#fff;}
 
 img{
   max-width: 100%;
@@ -100,12 +110,21 @@ img{
     width: 40%;
 }
 
+.news .list{
+  border-left: 1px solid #e0e2e2;
+}
+
+
 .item{
   padding: 1rem;
 }
 
+.item:nth-child(n+2){
+  border-top: 1px solid #e0e2e2;
+}
+
 .item:first-child{
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 
 .list .itemImage{
@@ -136,19 +155,23 @@ img{
 }
 
 h1 {
-    font-size: 3rem;
-    margin: 0rem;
+  font-size: 2.5rem;
+  margin: 0rem;
 }
 
-*
-h1, h2, h3{
-  font-weight: bolder;
+h1, h2{
+  font-weight: 900;
+}
+
+h3{
+  font-weight: bold;
 }
 
 h2.section{
   text-align: center;
   padding: 2rem 0rem;
   margin: 0rem;
+  font-size: 2rem;
 }
 
 .learningIn{
@@ -178,12 +201,14 @@ h2.section{
   padding: 1rem;
 }
 
-.itemText h3, .itemText h5{
+.list .itemText h3,.item_L .itemText h3, .itemText h5{
   margin: 0rem;
 }
 
-.itemText h5{
-  padding: 0.5rem 0rem;
+.itemText h5 {
+    padding: 0.5rem 0rem;
+    font-weight: initial;
+    font-size: 1rem;
 }
 
 video{
