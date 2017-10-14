@@ -232,7 +232,6 @@ footer{
 .footer{
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  padding-top:1rem;
 }
 
 .footer p{
@@ -243,9 +242,155 @@ footer{
   color:#4a4a4a;
   text-decoration: none;
 }
+
+.mobile{
+  display: none;
+}
+
 @media only screen and (max-width:1024px) {
   .container{
-    width: 100%;
+    width: 90%;
   }
+
+  .learningIn {
+    padding: 0rem 0rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0rem;
+}
+
+.bannDesc p {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width:694px){
+  .desktop{
+    display: none;
+  }
+
+  h1 {font-size: 1.75rem;}
+
+  .mobile{
+    display: inline;
+  }
+
+  .logo img {
+    height: 2rem;
+}
+
+  .banner{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container, .list, .list .itemImage, .item .itemText, .bannerIn, .exhiVid, .logo {
+      width: 100%;
+  }
+
+  .footer, .bannDesc, .item_L{
+    width:90%;
+  }
+
+  .list, .bannDesc, .learning .learningIn {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .bannDesc {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 2rem;
+  }
+
+
+  .item:nth-child(n+2) {
+    border-top:inherit;
+}
+
+.news .list {
+    border-left: inherit;
+}
+
+ .item .itemText{
+    padding-left: 1rem;
+}
+
+.bannerIn, .exhiVid {
+    padding: 0rem;
+}
+
+.logo {
+    justify-content: space-around;
+}
+
+.bannDesc a {
+    width: 100%;
+    background-color: #9b9b9b;
+}
+
+.learningIn .item_L:nth-child(n+4) {
+    margin-top: inherit;
+}
+
+.learningIn .item_L {
+    margin-bottom: 0.5rem;
+}
+
+.item_L h3{
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 0rem;
+  background-color: #d8d8d8;
+}
+
+.op  {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+.item_L:hover > .op {
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+
+
+.item_h{
+  height: 3.81rem;
+  transition: height 2s;
+}
+
+.item_h:nth-child(2){
+  height: 5rem;
+  transition: height 2s;
+}
+
+.item_h:nth-child(3){
+  height: 5rem;
+  transition: height 2s;
+}
+
+.item_h:hover{
+  height: 20rem;
+  transition: height 2s;
+}
+
+.footer{
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+
+.footer p {
+    font-size: 0.75rem;
+}
 
 }
