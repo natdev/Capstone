@@ -369,7 +369,7 @@ h1 {
   transition: height 2s;
 }
 
-.item_h:nth-child(2){
+/*.item_h:nth-child(2){
   height: 5rem;
   transition: height 2s;
 }
@@ -377,10 +377,10 @@ h1 {
 .item_h:nth-child(3){
   height: 5rem;
   transition: height 2s;
-}
+}*/
 
 .item_h:hover{
-  height: 20rem;
+  height: 24rem;
   transition: height 2s;
 }
 
